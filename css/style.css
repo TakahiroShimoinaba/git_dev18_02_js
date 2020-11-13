@@ -1,0 +1,106 @@
+/* ここから下に記載していく */
+
+.titleimg {
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.start {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* 
+
+ここから時計
+
+*/
+
+.btnposition {
+  text-align: center;
+}
+
+.startbtn {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 60px;
+  background-color: khaki;
+}
+
+#countdown {
+  margin: 40px 0 40px 0;
+}
+
+/* 
+
+ここまで時計
+
+*/
+
+/* 
+
+自分の選択
+
+*/
+.guchopa {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.guchopaimg {
+  max-width: 100%;
+  margin: 0 20 0 20;
+}
+/* 
+
+自分の選択
+
+*/
+
+/* 
+
+判定
+
+*/
+
+.hantei {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* 
+
+判定
+
+*/
+
+/* 
+
+相手の選択
+
+*/
+.aitekekka {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.button {
+  text-align: center;
+}
+
+/* 
+
+相手の選択
+
+*/

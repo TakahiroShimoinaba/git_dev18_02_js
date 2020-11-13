@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript/jQuery1回目</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+
+  <!-- <div class="titleimg">
+<img src="img/じゃんけん標題.jpg" alt="">
+
+  </div> -->
+  
+<div class="title">勝っても勝てないじゃんけん</div>
+<div class="start">出したい手を選んでください。
+</div>
+
+<!-- 
+
+ここから時計
+
+
+ -->
+ <!-- <div class="btnposition">
+
+
+  <div id="countdown"></div>    
+ <button type="button" id="btnStart" class="startbtn">じゃんけん</button>
+</div>
+ -->
+
+ 
+ <!-- 
+ 
+ ここまで時計
+ 
+ 
+  -->
+
+  <!-- 
+    
+    自分の選択
+  
+  -->
+<div class="guchopa" id="janken"> 
+
+  <div class="guchopaimg" >
+      <input type="image" src="img/gu.png"  alt= グーボタン height="120" class="gubtn" value="0" id="guu">
+  </div>
+
+  <div class="guchopaimg">
+      <input type="image" src="img/choki.jpg"  alt= チョキボタン height="120" class="chokibtn" value="1" id="choo">
+  </div>
+
+  <div class="guchopaimg" >
+      <input type="image" src="img/paa.jpg"  alt= パーボタン height="120" class="pabtn" value="2" id="paa">
+  </div>
+</div>
+
+
+<!-- select使えばいいかと挑戦して失敗
+<select name="" id="janken">
+  <option value="0" id="guu" class="gubtn">ぐ</option>
+  <option value="1" id="choo" class="chokibtn">ち</option>
+  <option value="2" id="paa" class="pabtn">ぱ</option> -->
+<!-- </select> -->
+  
+  <!-- select使えばいいかと挑戦して失敗 -->
+  
+
+  
+
+  <!-- 
+    
+    自分の選択
+  
+  -->
+
+    <!-- 
+    
+判定
+  
+  -->
+<div class="hantei">
+
+  <img src="img/win.jpg" alt="winimg" style="display: none;" class="winimg">
+  <img src="img/lose.jpg" alt="loseimg" style="display: none;" class="loseimg">
+  <img src="img/wake.jpg" alt="wakeimg" style="display: none;" class="wakeimg">
+
+</div>
+
+  <!-- 
+    
+    判定
+  
+  -->
+
+    <!-- 
+    
+    相手の選択
+  
+  -->
+<div class="aitekekka">
+  <div class="guchopaimg">
+
+    <input type="image" src="img/gu.png"  alt= 相手グー height="120" class="aitegubtn" style="display: none;">
+  </div>
+
+  <div class="guchopaimg">
+    <input type="image" src="img/choki.jpg"  alt= 相手チョキ height="120" class="aitechokibtn" style="display: none;"> 
+  </div>
+
+  <div class="guchopaimg">
+    <input type="image" src="img/paa.jpg"  alt= 相手パー height="120" class="aitepabtn" style="display: none;">
+  </div>
+
+
+</div>
+
+  <!-- 
+    
+    相手の選択
+  
+  -->
+
+<!-- 
+        授業より 
+  -->
+
+<!-- <div class="button">押したら変化</div>
+<div class="kekka"></div> -->
+
+<!-- 
+        授業より 
+  -->
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="js/test.js"></script>
+</body>
+
+</html>
