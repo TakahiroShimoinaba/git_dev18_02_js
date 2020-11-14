@@ -130,11 +130,18 @@
 
 // それぞれのボタンが押された時の場合分け
 
+
+
+
 $(".gubtn").on("click", function(){
         var megu= 0;
         console.log(megu);
         return megu;
+
+
     });
+
+
 $(".chokibtn").on("click", function(){
         var choki= 1;
         console.log(choki);
@@ -149,11 +156,12 @@ $(".pabtn").on("click", function(){
 
 // クリックからの始動
 
-$(".gubtn, .chokibtn, .pabtn").on("click", function(){
+$(".gubtn").on("click", function(){
 
     // 自分の手
-    var me = document.getElementById("janken").selectedIndex;
-    console.log(me)
+    var megu= 0;
+        console.log(megu);
+        
   
     // PCの手
    var aite = Math.floor(Math.random()*3);
@@ -165,44 +173,110 @@ $(".gubtn, .chokibtn, .pabtn").on("click", function(){
     if(aite == 0) {
         console.log("相手はグー");
         $(".aitegubtn").show();
+        judge = "ひきわけ";
+        console.log("引き分け");
+        $(".wakeimg").show();
         
     } else if(aite == 1) {
         console.log("相手はチョキ");
         $(".aitechokibtn").show();
+        judge = "あなたの勝ち";
+        console.log("勝ち");
+        $(".winimg").show();
         
     } else if(aite == 2) {
         console.log("相手はパー");
         $(".aitepabtn").show();
-        
-    }
-
-// 判定// 判定// 判定// 判定// 判定
-
-    if(me == 0 && aite == 1) {
-        judge = "あなたの勝ち";
-        console.log("勝ち");
-        $(".winimg").show();
-    
-    } else if(me == 1 && aite == 2) {
-        judge = "あなたの勝ち";
-        console.log("勝ち");
-        $(".winimg").show();
-    
-    } else if(me == 2 && aite == 0) {
-        judge = "あなたの勝ち";
-        console.log("勝ち");
-        $(".winimg").show();
-    
-    } else if(me == aite) {
-        judge = "ひきわけ";
-        console.log("引き分け");
-        $(".wakeimg").show();
-    
-    } else {
         judge = "あなたの負け";
         console.log("負け");
         $(".loseimg").show();
+        
+    }
+});
+
+
+
+$(".chokibtn").on("click", function(){
+
+    // 自分の手
+    var mechoki= 1;
+        console.log(mechoki);
     
-}
+  
+    // PCの手
+   var aite = Math.floor(Math.random()*3);
+   console.log(aite)
+  
+    // 判定
+    var judge;
+
+    if(aite == 0) {
+        console.log("相手はグー");
+        $(".aitegubtn").show();
+        judge = "あなたの負け";
+        console.log("負け");
+        $(".loseimg").show();
+        
+    } else if(aite == 1) {
+        console.log("相手はチョキ");
+        $(".aitechokibtn").show();
+        judge = "ひきわけ";
+        console.log("引き分け");
+        $(".wakeimg").show();
+
+        
+    } else if(aite == 2) {
+        console.log("相手はパー");
+        $(".aitepabtn").show();
+        judge = "あなたの勝ち";
+        console.log("勝ち");
+        $(".winimg").show();
+        
+    }
+});
+
+
+
+$(".pabtn").on("click", function(){
+
+    // 自分の手
+    var mepa= 2;
+        console.log(mepa);
+    
+  
+    // PCの手
+   var aite = Math.floor(Math.random()*3);
+   console.log(aite)
+  
+    // 判定
+    var judge;
+
+    if(aite == 0) {
+        console.log("相手はグー");
+        $(".aitegubtn").show();
+        judge = "あなたの勝ち";
+        console.log("勝ち");
+        $(".winimg").show();
+        
+    } else if(aite == 1) {
+        console.log("相手はチョキ");
+        $(".aitechokibtn").show();
+        judge = "あなたの負け";
+        console.log("負け");
+        $(".loseimg").show();
+        
+    } else if(aite == 2) {
+        console.log("相手はパー");
+        $(".aitepabtn").show();
+        judge = "ひきわけ";
+        console.log("引き分け");
+        $(".wakeimg").show();
+        
+    }
+});
+
+$(".onemore").on("click", function(){
+
+    document.location.reload();
 
 })

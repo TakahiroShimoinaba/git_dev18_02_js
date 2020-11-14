@@ -13,30 +13,17 @@
 
 .start {
   text-align: center;
-  font-size: 30px;
+  font-size: 15px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-/* 
-
-ここから時計
-
-*/
-
-.btnposition {
-  text-align: center;
-}
-
-.startbtn {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 60px;
+.onemore {
+  display: block;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 150px;
   background-color: khaki;
-}
-
-#countdown {
-  margin: 40px 0 40px 0;
 }
 
 /* 
@@ -53,7 +40,7 @@
 .guchopa {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .guchopaimg {
